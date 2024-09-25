@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "npx tailwindcss -i .\\tailwind.css -o .\\wwwroot\\app.css --watch",
-    "build": "npx tailwindcss -i .\\tailwind.css -o .\\wwwroot\\app.css"
+    "watch": "npx tailwindcss -i .\\tailwind.css -o .\\wwwroot\\tailwind.css --watch",
+    "build": "npx tailwindcss -i .\\tailwind.css -o .\\wwwroot\\tailwind.css"
   },
   "author": "",
   "license": "ISC",

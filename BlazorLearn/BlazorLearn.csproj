@@ -6,13 +6,8 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
-    <Target Name="Tailwind Watch Command" BeforeTargets="Build" 
-            Condition="'$(Configuration)' == 'Debug'">
-        <Message Text="watch tailwind" Importance="high"/>
-        <Exec Command="npm run watch"/>
-    </Target>
-
-    <Target Name="Tailwind Build Command" BeforeTargets="Build" 
+    <Target Name="Tailwind Build Command" 
+            BeforeTargets="Build"
             Condition="'$(Configuration)' == 'Release'">
         <Message Text="build tailwind" Importance="high"/>
         <Exec Command="npm run build"/>

@@ -1,15 +1,13 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-    <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
-        <Nullable>enable</Nullable>
-        <ImplicitUsings>enable</ImplicitUsings>
-    </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
 
-    <Target Name="Tailwind Build Command" 
-            BeforeTargets="Build"
-            Condition="'$(Configuration)' == 'Release'">
-        <Message Text="build tailwind" Importance="high"/>
-        <Exec Command="npm run build"/>
-    </Target>
+	<Target Name="Tailwind Build Command" BeforeTargets="Build" Condition="'$(Configuration)' == 'Release'">
+		<Message Text="build tailwindcss" Importance="high" />
+		<Exec Command="npm run build" />
+	</Target>
 </Project>
